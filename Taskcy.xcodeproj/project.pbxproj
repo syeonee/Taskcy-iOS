@@ -21,9 +21,9 @@
 		D649251D2AA627AD00A10EC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D649251C2AA627AD00A10EC5 /* Assets.xcassets */; };
 		D64925202AA627AD00A10EC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D649251E2AA627AD00A10EC5 /* LaunchScreen.storyboard */; };
 		D649254A2AA7768E00A10EC5 /* Onboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D64925492AA7768E00A10EC5 /* Onboard.storyboard */; };
-		D649254C2AA776CE00A10EC5 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D649254B2AA776CD00A10EC5 /* Start.storyboard */; };
 		D64925512AA77AC100A10EC5 /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64925502AA77AC100A10EC5 /* OnboardViewController.swift */; };
 		D65366D42AF0A6EB00EA8E93 /* OnboardPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65366D32AF0A6EB00EA8E93 /* OnboardPageViewController.swift */; };
+		D67B16B02AF9440F00D5C025 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B16AF2AF9440F00D5C025 /* UIButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,9 +45,9 @@
 		D649251F2AA627AD00A10EC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D64925212AA627AD00A10EC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D64925492AA7768E00A10EC5 /* Onboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboard.storyboard; sourceTree = "<group>"; };
-		D649254B2AA776CD00A10EC5 /* Start.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
 		D64925502AA77AC100A10EC5 /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
 		D65366D32AF0A6EB00EA8E93 /* OnboardPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardPageViewController.swift; sourceTree = "<group>"; };
+		D67B16AF2AF9440F00D5C025 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +113,7 @@
 		D64925122AA627AA00A10EC5 /* Taskcy */ = {
 			isa = PBXGroup;
 			children = (
+				D67B16AE2AF943E700D5C025 /* Extensions */,
 				D615976C2ADEE28200D3B005 /* Resources */,
 				D649254F2AA7771600A10EC5 /* Controller */,
 				D649254E2AA7771200A10EC5 /* View */,
@@ -137,7 +138,6 @@
 		D649254E2AA7771200A10EC5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D649254B2AA776CD00A10EC5 /* Start.storyboard */,
 				D64925492AA7768E00A10EC5 /* Onboard.storyboard */,
 				D64925192AA627AA00A10EC5 /* Main.storyboard */,
 			);
@@ -151,6 +151,14 @@
 				D65366D32AF0A6EB00EA8E93 /* OnboardPageViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		D67B16AE2AF943E700D5C025 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D67B16AF2AF9440F00D5C025 /* UIButton.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		D9CD31F7C41A1E89649B792E /* Frameworks */ = {
@@ -225,7 +233,6 @@
 				D64925202AA627AD00A10EC5 /* LaunchScreen.storyboard in Resources */,
 				D61597742ADEE2BA00D3B005 /* Poppins-Bold.ttf in Resources */,
 				D649251D2AA627AD00A10EC5 /* Assets.xcassets in Resources */,
-				D649254C2AA776CE00A10EC5 /* Start.storyboard in Resources */,
 				D61597762ADEE2BA00D3B005 /* Poppins-Medium.ttf in Resources */,
 				D61597772ADEE2BA00D3B005 /* Poppins-SemiBold.ttf in Resources */,
 				D649254A2AA7768E00A10EC5 /* Onboard.storyboard in Resources */,
@@ -289,6 +296,7 @@
 				D64925512AA77AC100A10EC5 /* OnboardViewController.swift in Sources */,
 				D64925162AA627AA00A10EC5 /* SceneDelegate.swift in Sources */,
 				D65366D42AF0A6EB00EA8E93 /* OnboardPageViewController.swift in Sources */,
+				D67B16B02AF9440F00D5C025 /* UIButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

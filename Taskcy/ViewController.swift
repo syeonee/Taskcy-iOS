@@ -8,10 +8,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var bottomView: UIView!
+    @IBOutlet weak var startButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        bottomView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        bottomView.layer.cornerRadius = 30
+        bottomView.layer.masksToBounds = true
+        
+        startButton.makeRoundButton(enableTextColor: UIColor(named: "FFFFFF")!, disableTextColor: UIColor(named: "8D8D8D")!, radius: 15)
+        
     }
 
 
