@@ -14,16 +14,20 @@
 		D61597772ADEE2BA00D3B005 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D61597712ADEE2BA00D3B005 /* Poppins-SemiBold.ttf */; };
 		D61597782ADEE2BA00D3B005 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D61597722ADEE2BA00D3B005 /* Poppins-Thin.ttf */; };
 		D61597792ADEE2BA00D3B005 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D61597732ADEE2BA00D3B005 /* Poppins-Regular.ttf */; };
+		D641360D2B1260EC002EE5E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D641360C2B1260EB002EE5E6 /* Main.storyboard */; };
 		D64925142AA627AA00A10EC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64925132AA627AA00A10EC5 /* AppDelegate.swift */; };
 		D64925162AA627AA00A10EC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64925152AA627AA00A10EC5 /* SceneDelegate.swift */; };
 		D64925182AA627AA00A10EC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64925172AA627AA00A10EC5 /* ViewController.swift */; };
-		D649251B2AA627AA00A10EC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D64925192AA627AA00A10EC5 /* Main.storyboard */; };
+		D649251B2AA627AA00A10EC5 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D64925192AA627AA00A10EC5 /* Start.storyboard */; };
 		D649251D2AA627AD00A10EC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D649251C2AA627AD00A10EC5 /* Assets.xcassets */; };
 		D64925202AA627AD00A10EC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D649251E2AA627AD00A10EC5 /* LaunchScreen.storyboard */; };
 		D649254A2AA7768E00A10EC5 /* Onboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D64925492AA7768E00A10EC5 /* Onboard.storyboard */; };
 		D64925512AA77AC100A10EC5 /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64925502AA77AC100A10EC5 /* OnboardViewController.swift */; };
 		D65366D42AF0A6EB00EA8E93 /* OnboardPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65366D32AF0A6EB00EA8E93 /* OnboardPageViewController.swift */; };
 		D67B16B02AF9440F00D5C025 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B16AF2AF9440F00D5C025 /* UIButton.swift */; };
+		D6E8EAE42B0BACB00080FA3D /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E8EAE32B0BACB00080FA3D /* SignViewController.swift */; };
+		D6E8EAE62B0BAE300080FA3D /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E8EAE52B0BAE300080FA3D /* UITextField.swift */; };
+		D6E8EAE82B0BB2C70080FA3D /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E8EAE72B0BB2C70080FA3D /* UIFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,11 +40,12 @@
 		D61597712ADEE2BA00D3B005 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		D61597722ADEE2BA00D3B005 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
 		D61597732ADEE2BA00D3B005 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		D641360C2B1260EB002EE5E6 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D64925102AA627AA00A10EC5 /* Taskcy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taskcy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D64925132AA627AA00A10EC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D64925152AA627AA00A10EC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D64925172AA627AA00A10EC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D649251A2AA627AA00A10EC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D649251A2AA627AA00A10EC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Start.storyboard; sourceTree = "<group>"; };
 		D649251C2AA627AD00A10EC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D649251F2AA627AD00A10EC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D64925212AA627AD00A10EC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +53,9 @@
 		D64925502AA77AC100A10EC5 /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
 		D65366D32AF0A6EB00EA8E93 /* OnboardPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardPageViewController.swift; sourceTree = "<group>"; };
 		D67B16AF2AF9440F00D5C025 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		D6E8EAE32B0BACB00080FA3D /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
+		D6E8EAE52B0BAE300080FA3D /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		D6E8EAE72B0BB2C70080FA3D /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				D64925492AA7768E00A10EC5 /* Onboard.storyboard */,
-				D64925192AA627AA00A10EC5 /* Main.storyboard */,
+				D64925192AA627AA00A10EC5 /* Start.storyboard */,
+				D641360C2B1260EB002EE5E6 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -149,6 +158,7 @@
 			children = (
 				D64925502AA77AC100A10EC5 /* OnboardViewController.swift */,
 				D65366D32AF0A6EB00EA8E93 /* OnboardPageViewController.swift */,
+				D6E8EAE32B0BACB00080FA3D /* SignViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -157,6 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				D67B16AF2AF9440F00D5C025 /* UIButton.swift */,
+				D6E8EAE52B0BAE300080FA3D /* UITextField.swift */,
+				D6E8EAE72B0BB2C70080FA3D /* UIFont.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -234,10 +246,11 @@
 				D61597742ADEE2BA00D3B005 /* Poppins-Bold.ttf in Resources */,
 				D649251D2AA627AD00A10EC5 /* Assets.xcassets in Resources */,
 				D61597762ADEE2BA00D3B005 /* Poppins-Medium.ttf in Resources */,
+				D641360D2B1260EC002EE5E6 /* Main.storyboard in Resources */,
 				D61597772ADEE2BA00D3B005 /* Poppins-SemiBold.ttf in Resources */,
 				D649254A2AA7768E00A10EC5 /* Onboard.storyboard in Resources */,
 				D61597792ADEE2BA00D3B005 /* Poppins-Regular.ttf in Resources */,
-				D649251B2AA627AA00A10EC5 /* Main.storyboard in Resources */,
+				D649251B2AA627AA00A10EC5 /* Start.storyboard in Resources */,
 				D61597782ADEE2BA00D3B005 /* Poppins-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,24 +304,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6E8EAE42B0BACB00080FA3D /* SignViewController.swift in Sources */,
 				D64925182AA627AA00A10EC5 /* ViewController.swift in Sources */,
 				D64925142AA627AA00A10EC5 /* AppDelegate.swift in Sources */,
+				D6E8EAE62B0BAE300080FA3D /* UITextField.swift in Sources */,
 				D64925512AA77AC100A10EC5 /* OnboardViewController.swift in Sources */,
 				D64925162AA627AA00A10EC5 /* SceneDelegate.swift in Sources */,
 				D65366D42AF0A6EB00EA8E93 /* OnboardPageViewController.swift in Sources */,
 				D67B16B02AF9440F00D5C025 /* UIButton.swift in Sources */,
+				D6E8EAE82B0BB2C70080FA3D /* UIFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D64925192AA627AA00A10EC5 /* Main.storyboard */ = {
+		D64925192AA627AA00A10EC5 /* Start.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D649251A2AA627AA00A10EC5 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Start.storyboard;
 			sourceTree = "<group>";
 		};
 		D649251E2AA627AD00A10EC5 /* LaunchScreen.storyboard */ = {

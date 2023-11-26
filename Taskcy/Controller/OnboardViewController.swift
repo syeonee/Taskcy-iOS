@@ -29,12 +29,19 @@ class OnboardViewController: UIViewController {
             onboardPageViewController.onboardDelegate = self
         }
     }
+    @IBAction func skipButtonTapped(_ sender: Any) {
+        performSegue(withIdentifier: "goToSign", sender: nil)
+    }
     
     @IBAction func nextPageButtonTapped(_ sender: Any) {
         let nextPageIndex = onboardPageControl.currentPage + 1
-        onboardPageViewController.goToPage(index: nextPageIndex)
-        onboardPageControl.currentPage = nextPageIndex
-        updatePageControlUI(currentPageIndex: nextPageIndex)
+        if nextPageIndex == 3 {
+            performSegue(withIdentifier: "goToSign", sender: nil)
+        }else{
+            onboardPageViewController.goToPage(index: nextPageIndex)
+            onboardPageControl.currentPage = nextPageIndex
+            updatePageControlUI(currentPageIndex: nextPageIndex)
+        }
     }
     @IBAction func onboardPageControlValueChanged(_ sender: Any) {
         let currentPageIndex = onboardPageControl.currentPage
