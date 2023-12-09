@@ -12,6 +12,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var addTaskButton: UIButton!
     
     @IBOutlet weak var taskTableView: UITableView!
+    @IBOutlet weak var timeLineView: UIView!
     
     let taskViewModel = TaskViewModel()
     
@@ -19,6 +20,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.viewDidLoad()
         setUI()
         taskViewModel.loadTasks()
+        setTimeBoard()
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         NotificationCenter.default.addObserver(self, selector: #selector(reloadTaskTableView), name: Notification.Name("AddTaskComplete"), object: nil)
@@ -33,6 +36,27 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         taskTableView.layer.cornerRadius = 10
         taskTableView.layer.borderWidth = 1
         taskTableView.layer.borderColor = UIColor(named: "E9F1FF")?.cgColor
+    }
+    
+    func setTimeBoard() {
+        for (index, event) in taskViewModel.events.enumerated() {
+            let timeBoard = TimeBoardView()
+            timeBoard.backgroundColor = UIColor(named: "756EF3")
+            timeBoard.layer.cornerRadius = 16
+            timeBoard.titleLabel.text = event.name
+            timeBoard.timeLabel.text = event.startTime
+            timeBoard.translatesAutoresizingMaskIntoConstraints = false
+            
+            self.timeLineView.addSubview(timeBoard)
+            
+            NSLayoutConstraint.activate([
+                timeBoard.heightAnchor.constraint(equalToConstant: 75),
+                timeBoard.topAnchor.constraint(equalTo: timeLineView.topAnchor, constant: CGFloat(75*index+1*index)),
+                timeBoard.leadingAnchor.constraint(equalTo: timeLineView.leadingAnchor, constant: 70),
+                timeBoard.trailingAnchor.constraint(equalTo: timeLineView.trailingAnchor, constant: -24)
+
+            ])
+        }
     }
     
     @objc func reloadTaskTableView(){
