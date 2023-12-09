@@ -1,7 +1,7 @@
 # Taskcy-iOS
 투두 확인 및 관리를 도와주는 어플입니다.
 
-<img src="https://github.com/syeonee/Taskcy-iOS/assets/57382478/a9f21f7f-635d-4311-af1f-fa01e309d98a" width="363" height="760"/>
+<img src="https://github.com/syeonee/Taskcy-iOS/assets/57382478/d3eaf448-7784-4a26-aa7c-b2ef8828f506" width="363" height="760"/>
 
 
 
