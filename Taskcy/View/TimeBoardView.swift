@@ -59,8 +59,8 @@ class TimeBoardView: UIView {
             
             timeLabel.heightAnchor.constraint(equalToConstant: 11),
             timeLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-            timeLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 20),
-            timeLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 20)
+            timeLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
+            timeLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -20)
             
 
         ])

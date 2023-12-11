@@ -44,14 +44,20 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             timeBoard.backgroundColor = UIColor(named: "756EF3")
             timeBoard.layer.cornerRadius = 16
             timeBoard.titleLabel.text = event.name
-            timeBoard.timeLabel.text = event.startTime
+            timeBoard.timeLabel.text = "\(event.startTime ?? "") ~ \(event.endTime ?? "")"
             timeBoard.translatesAutoresizingMaskIntoConstraints = false
+            print(getTimeDiff(start: event.startTime ?? "", end: event.endTime ?? ""))
+            
+            let eventTimeDiff = getTimeDiff(start: event.startTime ?? "", end: event.endTime ?? "")/60/30
+            let startTimeDiff = getTimeDiff(start: "09:00", end: event.startTime ?? "")/60/30
             
             self.timeLineView.addSubview(timeBoard)
             
             NSLayoutConstraint.activate([
+//                timeBoard.heightAnchor.constraint(equalToConstant: CGFloat(75/2*eventTimeDiff)),
+//                timeBoard.topAnchor.constraint(equalTo: timeLineView.topAnchor, constant: CGFloat( ((75/2)*startTimeDiff) + (1*startTimeDiff/2)) ),
                 timeBoard.heightAnchor.constraint(equalToConstant: 75),
-                timeBoard.topAnchor.constraint(equalTo: timeLineView.topAnchor, constant: CGFloat(75*index+1*index)),
+                timeBoard.topAnchor.constraint(equalTo: timeLineView.topAnchor, constant: CGFloat( 75*index + 1*index) ),
                 timeBoard.leadingAnchor.constraint(equalTo: timeLineView.leadingAnchor, constant: 70),
                 timeBoard.trailingAnchor.constraint(equalTo: timeLineView.trailingAnchor, constant: -24)
 
@@ -77,6 +83,16 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return cell
     }
 
+    func getTimeDiff(start: String, end: String) -> Int {
+        let format = DateFormatter()
+        format.dateFormat = "yyyy-MM-dd HH:mm:ss"
+                
+        guard let startTime = format.date(from: "2023-01-01 \(start):00") else {return 0}
+        guard let endTime = format.date(from: "2023-01-01 \(end):00") else {return 0}
+        print(Int(endTime.timeIntervalSince(startTime)))
+        
+        return Int(endTime.timeIntervalSince(startTime))
+    }
 }
 
 

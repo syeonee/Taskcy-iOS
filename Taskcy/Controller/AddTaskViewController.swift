@@ -95,10 +95,16 @@ class AddTaskViewController: UIViewController {
         startTimePicker.datePickerMode = .time
         startTimePicker.addTarget(self, action: #selector(changeTime(datePicker:)), for: UIControl.Event.valueChanged)
         startTimePicker.preferredDatePickerStyle = .wheels
+        startTimePicker.minimumDate = Date("2023-01-01 09:00")
+        startTimePicker.maximumDate = Date("2023-01-01 18:00")
+        startTimePicker.minuteInterval = 30
         
         endTimePicker.datePickerMode = .time
         endTimePicker.addTarget(self, action: #selector(changeTime(datePicker:)), for: UIControl.Event.valueChanged)
         endTimePicker.preferredDatePickerStyle = .wheels
+        endTimePicker.minimumDate = Date("2023-01-01 09:00")
+        endTimePicker.maximumDate = Date("2023-01-01 18:00")
+        endTimePicker.minuteInterval = 30
         
         startTimeTextField.inputView = startTimePicker
         
