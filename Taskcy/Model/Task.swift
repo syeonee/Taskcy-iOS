@@ -79,11 +79,11 @@ class TaskViewModel {
     }
     
     var todos: [Task] {
-        return tasks.filter { $0.startTime == nil }
+        return tasks.filter { $0.startTime == "" }
     }
     
     var events: [Task] {
-        return tasks.filter { $0.startTime != nil }
+        return tasks.filter { $0.startTime != "" }
     }
     
     

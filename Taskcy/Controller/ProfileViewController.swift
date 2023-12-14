@@ -12,14 +12,18 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var editButton: UIButton!
     
+    @IBOutlet weak var ongoingTotalLabel: UILabel!
+    @IBOutlet weak var completeTotalLabel: UILabel!
+    
     @IBOutlet weak var myTaskView: UIView!
     @IBOutlet weak var settingsView: UIView!
     
+    let taskViewModel = TaskViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        taskViewModel.loadTasks()
         setUI()
-        
     }
     
 
@@ -39,6 +43,9 @@ class ProfileViewController: UIViewController {
         settingsView.layer.cornerRadius = 12
         settingsView.layer.borderWidth = 1
         settingsView.layer.borderColor = UIColor(named: "E9F1FF")?.cgColor
+        
+        ongoingTotalLabel.text = String(describing: taskViewModel.tasks.filter {$0.status == Status.ongoing}.count)
+        completeTotalLabel.text = String(describing: taskViewModel.tasks.filter {$0.status == Status.complete}.count)
     }
 
 }

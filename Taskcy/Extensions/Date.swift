@@ -11,21 +11,35 @@ extension Date {
     
     init(_ dateString:String) {
         let dateStringFormatter = DateFormatter()
-        dateStringFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+        dateStringFormatter.dateFormat = "yyyy-MM-dd"
         dateStringFormatter.locale = NSLocale(localeIdentifier: "en_US_POSIX") as Locale
         let date = dateStringFormatter.date(from: dateString)!
         self.init(timeInterval:0, since:date)
     }
     
+    init(timeDateString:String) {
+        let dateStringFormatter = DateFormatter()
+        dateStringFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+        dateStringFormatter.locale = NSLocale(localeIdentifier: "en_US_POSIX") as Locale
+        let date = dateStringFormatter.date(from: timeDateString)!
+        self.init(timeInterval:0, since:date)
+    }
+    
     func getDateString() -> String {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd" // 2020-08-13 16:30
+        dateFormatter.dateFormat = "yyyy-MM-dd"
         return dateFormatter.string(from: self)
     }
     
     func getTimeString() -> String {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "HH:mm" // 2020-08-13 16:30
+        dateFormatter.dateFormat = "HH:mm"
+        return dateFormatter.string(from: self)
+    }
+    
+    func getMonthDayString() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMMM, d"
         return dateFormatter.string(from: self)
     }
 }

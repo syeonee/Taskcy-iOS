@@ -95,15 +95,15 @@ class AddTaskViewController: UIViewController {
         startTimePicker.datePickerMode = .time
         startTimePicker.addTarget(self, action: #selector(changeTime(datePicker:)), for: UIControl.Event.valueChanged)
         startTimePicker.preferredDatePickerStyle = .wheels
-        startTimePicker.minimumDate = Date("2023-01-01 09:00")
-        startTimePicker.maximumDate = Date("2023-01-01 18:00")
+        startTimePicker.minimumDate = Date(timeDateString: "2023-01-01 09:00")
+        startTimePicker.maximumDate = Date(timeDateString: "2023-01-01 18:00")
         startTimePicker.minuteInterval = 30
         
         endTimePicker.datePickerMode = .time
         endTimePicker.addTarget(self, action: #selector(changeTime(datePicker:)), for: UIControl.Event.valueChanged)
         endTimePicker.preferredDatePickerStyle = .wheels
-        endTimePicker.minimumDate = Date("2023-01-01 09:00")
-        endTimePicker.maximumDate = Date("2023-01-01 18:00")
+        endTimePicker.minimumDate = Date(timeDateString: "2023-01-01 09:00")
+        endTimePicker.maximumDate = Date(timeDateString: "2023-01-01 18:00")
         endTimePicker.minuteInterval = 30
         
         startTimeTextField.inputView = startTimePicker
@@ -157,7 +157,7 @@ class AddTaskViewController: UIViewController {
     
     @IBAction func addTaskButtonTapped(_ sender: Any) {
         let status = todoButton.isSelected ? Status.todo : (ongoingButton.isSelected ? Status.ongoing : Status.complete)
-        taskViewModel.addTask(Task(name: taskNameTextField.text!, date: datePicker.date.getDateString(),startTime: startTimePicker.date.getTimeString(), endTime: endTimePicker.date.getTimeString(), status: status))
+        taskViewModel.addTask(Task(name: taskNameTextField.text!, date: datePicker.date.getDateString(),startTime: startTimeTextField.text, endTime: endTimeTextField.text, status: status))
         self.dismiss(animated: true) {
             NotificationCenter.default.post(name: Notification.Name("AddTaskComplete"), object: nil, userInfo: [:])
         }

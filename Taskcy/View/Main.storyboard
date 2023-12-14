@@ -458,8 +458,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="profile-tab" selectedImage="active-profile-tab" id="a6b-9y-IYN"/>
                     <connections>
+                        <outlet property="completeTotalLabel" destination="T78-Yr-Nw2" id="DZA-4s-EAq"/>
                         <outlet property="editButton" destination="kNb-jV-E8G" id="qgz-ZV-d7b"/>
                         <outlet property="myTaskView" destination="B3t-hF-xRp" id="FaW-Bq-U4D"/>
+                        <outlet property="ongoingTotalLabel" destination="UaF-Cn-UFQ" id="rOY-rG-rVJ"/>
                         <outlet property="profileImageView" destination="ZYr-G8-rKC" id="cJb-St-3Ec"/>
                         <outlet property="settingsView" destination="2d5-AR-J0Y" id="B8I-RR-uQF"/>
                     </connections>
@@ -927,8 +929,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="notification"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monday, 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xm8-yE-642">
-                                <rect key="frame" x="160" y="83.333333333333329" width="94.333333333333314" height="25.333333333333329"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taskcy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xm8-yE-642">
+                                <rect key="frame" x="175.33333333333334" y="83.333333333333329" width="63.333333333333343" height="25.333333333333329"/>
                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="18"/>
                                 <color key="textColor" name="002055"/>
                                 <nil key="highlightedColor"/>
@@ -1282,6 +1284,7 @@
                         <outlet property="addTaskButton" destination="vn1-6K-YZA" id="yBF-WS-BpD"/>
                         <outlet property="taskTableView" destination="iDI-dl-4Cm" id="p4h-mb-WCC"/>
                         <outlet property="timeLineView" destination="cxh-9E-HTz" id="5D5-MB-cfi"/>
+                        <outlet property="todayLabel" destination="jzo-nu-0N9" id="KNR-n3-3X4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qKv-0i-cMq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
